@@ -1,0 +1,216 @@
+%flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header {
+  background-image: url(./images/bg-hero-desktop.svg);
+  background-color: $Very-Pale-Cyan;
+  background-size: cover;
+  padding: 2rem 3rem;
+}
+.logo {
+  @extend %flex;
+  button {
+    @include button;
+    background-color: white;
+    @include media(mobile) {
+      padding: 10px;
+    }
+  }
+  img {
+    @include media(mobile) {
+      max-width: 50%;
+    }
+  }
+}
+header .upper {
+  margin: 3rem 1rem;
+  @extend %flex;
+  @include media(mobile) {
+    flex-direction: column;
+  }
+
+  .content {
+    margin: 2rem 0;
+    .heading {
+      font-size: 3rem;
+      line-height: 1.5;
+      @include media(mobile) {
+        font-size: 120%;
+      }
+    }
+    p {
+      line-height: 1.3;
+      font-size: 1.2rem;
+      padding: 1rem;
+      @include media(mobile) {
+        font-size: 100%;
+      }
+    }
+    button {
+      background-color: $pink;
+      color: white;
+      display: block;
+      margin-left: 2rem;
+      @include button;
+      &:hover {
+        background-color: rgba($pink, $alpha: 0.8);
+      }
+      @include media(mobile) {
+        padding: 0.5rem 1rem;
+      }
+    }
+  }
+}
+
+.container {
+  padding: 7rem 4rem;
+  @include media(mobile) {
+    padding: 1rem;
+  }
+  > div {
+    @extend%flex;
+
+    border: 1px solid #eee;
+    box-shadow: 1px 1px 5px lightgray;
+    padding: 5rem 1rem 5rem 5rem;
+    margin: 2rem;
+    border-radius: 5%;
+    -webkit-border-radius: 5%;
+    -moz-border-radius: 5%;
+    -ms-border-radius: 5%;
+    -o-border-radius: 5%;
+    @include media(mobile) {
+      padding: 1rem;
+      margin-bottom: 5rem;
+    }
+    &:first-child,
+    &:last-child {
+      @include media(mobile) {
+        flex-direction: column-reverse;
+      }
+    }
+    &:nth-child(2) {
+      @include media(mobile) {
+        flex-direction: column;
+      }
+    }
+    section {
+      line-height: 1.5;
+      margin: 2rem 0;
+      h2 {
+        margin-bottom: 0.7rem;
+      }
+    }
+  }
+}
+
+.footer {
+  position: relative;
+  padding: 5rem 2rem;
+  background-color: $Very-Dark-Cyan;
+  .logo img {
+    width: 7rem;
+    margin: 1.2rem;
+  }
+  .f-container {
+    display: flex;
+    justify-content: space-evenly;
+
+    @include media(mobile) {
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+    section {
+      flex: 1;
+    }
+    div {
+      display: flex;
+      align-items: center;
+      margin: 1rem;
+      span {
+        display: inline-block;
+        margin-left: 0.7rem;
+        color: $Grayish-Blue;
+      }
+    }
+    p {
+      color: $Grayish-Blue;
+      margin: 0.7rem 1rem;
+      font-size: 1.5rem;
+    }
+  }
+  .icons {
+    align-self: center;
+    i {
+      color: white;
+      margin-right: 0.5rem;
+      &:hover {
+        color: $pink;
+      }
+
+      border: 1px solid $Grayish-Blue;
+      padding: 0.5rem;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+    }
+  }
+  .copy {
+    text-align: center;
+    color: $Grayish-Blue;
+    margin-top: 1rem;
+    @include media(desktop) {
+      text-align: right;
+    }
+  }
+  .ready {
+    padding: 3rem;
+    background-color: white;
+
+    // width: fit-content;
+    h2 {
+      padding-bottom: 1rem;
+    }
+    button {
+      @include button;
+      color: white;
+      background-color: $pink;
+      padding: 1.5rem 5rem;
+      font-size: 1.5rem;
+      &:hover {
+        background-color: rgba($pink, $alpha: 0.8);
+      }
+      @include media(mobile) {
+        padding: 0.5rem 1rem;
+        font-size: 100%;
+      }
+    }
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    box-shadow: 1px 1px 2px lightgrey;
+
+    @include media(mobile) {
+      padding: 0.5rem 1rem;
+      font-size: 70%;
+      width: 70%;
+      text-align: center;
+    }
+  }
+}
