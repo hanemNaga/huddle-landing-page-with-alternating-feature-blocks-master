@@ -31,6 +31,8 @@ the desktop result:
 ![](./design-results/desktop-design.png)
 
 the mobile result:
+
+
 ![](./design-results/mobile-design.png)
 
 ### Links
