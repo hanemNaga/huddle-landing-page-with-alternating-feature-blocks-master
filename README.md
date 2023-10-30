@@ -80,5 +80,5 @@ the web responsive using mobile first
 
 - Website - [hanem Mohamed  naga]
 - Frontend Mentor - [@Hanem Naga](https://www.frontendmentor.io/profile/hanemNaga)
-- linkedin - [hanem naga]([[https://www.linkedin.com/in/hanem-naga/]])
+- linkedin - [@hanem naga]([https://www.linkedin.com/in/hanem-naga/])
 
