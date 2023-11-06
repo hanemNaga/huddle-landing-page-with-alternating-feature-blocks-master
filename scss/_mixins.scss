@@ -1,5 +1,6 @@
 @mixin button {
   border: none;
+  cursor: pointer;
   padding: 1.3rem 3.5rem;
   border-radius: 10% 50%;
   -webkit-border-radius: 10% 50%;

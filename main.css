@@ -42,6 +42,7 @@ header {
 
 .logo button {
   border: none;
+  cursor: pointer;
   padding: 1.3rem 3.5rem;
   border-radius: 10% 50%;
   -webkit-border-radius: 10% 50%;
@@ -97,6 +98,7 @@ header .upper .content button {
   display: block;
   margin-left: 2rem;
   border: none;
+  cursor: pointer;
   padding: 1.3rem 3.5rem;
   border-radius: 10% 50%;
   -webkit-border-radius: 10% 50%;
@@ -194,6 +196,11 @@ header .upper .content button:hover {
   margin: 0.7rem 1rem;
   font-size: 1.5rem;
 }
+@media (max-width: 991px) {
+  .footer .f-container p {
+    font-size: 0.9rem;
+  }
+}
 .footer .icons {
   align-self: center;
 }
@@ -244,6 +251,7 @@ header .upper .content button:hover {
 }
 .footer .ready button {
   border: none;
+  cursor: pointer;
   padding: 1.3rem 3.5rem;
   border-radius: 10% 50%;
   -webkit-border-radius: 10% 50%;

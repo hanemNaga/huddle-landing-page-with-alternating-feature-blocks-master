@@ -141,6 +141,9 @@ header .upper {
       color: $Grayish-Blue;
       margin: 0.7rem 1rem;
       font-size: 1.5rem;
+      @include media(mobile) {
+        font-size: 0.9rem;
+      }
     }
   }
   .icons {
